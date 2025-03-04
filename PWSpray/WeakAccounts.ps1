@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory -ErrorAction SilentlyContinue
 
 # Define possible seasons and years
-$seasons = @("Winter", "Spring", "Summer", "Autumn")
+$seasons = @("Winter!", "Spring!", "Summer!", "Autumn!")
 $years = @(2024..2030)
 
 # Generate a list of random first and last names
