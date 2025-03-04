@@ -48,7 +48,7 @@ foreach ($season in $seasons) {
                        -GivenName $firstName `
                        -Surname $lastName `
                        -SamAccountName $username `
-                       -UserPrincipalName "$username@yourdomain.com" `
+                       -UserPrincipalName "$username@doazlab.com" `
                        -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) `
                        -Enabled $true `
                        -PassThru -ErrorAction Stop | Out-Null
