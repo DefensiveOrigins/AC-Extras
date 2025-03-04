@@ -2,7 +2,7 @@
 Import-Module ActiveDirectory -ErrorAction SilentlyContinue
 
 # Define possible seasons and years
-$seasons = @("Winter!", "Spring!", "Summer!", "Autumn!")
+$seasons = @("Winter", "Spring", "Summer", "Autumn")
 $years = @(2024..2030)
 
 # Generate a list of random first and last names
@@ -40,7 +40,7 @@ foreach ($season in $seasons) {
         $usernames[$username] = $true
 
         # Generate password
-        $password = "$season$year"
+        $password = "$season$year!"
 
         # Try to create the AD user and handle any errors silently
         try {
